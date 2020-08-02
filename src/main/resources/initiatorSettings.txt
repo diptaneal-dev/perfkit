@@ -1,0 +1,20 @@
+#default settings for sessions
+[DEFAULT]#This will applies to all sessions
+ConnectionType=initiator
+LogonTimeout=30
+ReconnectInterval=5
+ResetOnLogon=Y
+FileLogPath=quickfixj/logs
+FileStorePath=quickfixj/store
+[SESSION]#A single session
+BeginString=FIX.4.2
+SenderCompID=MY-INITIATOR-SERVICE
+TargetCompID=MY-ACCEPTOR-SERVICE
+StartDay=sunday
+EndDay=sunday
+StartTime=00:00:00
+EndTime=00:00:00
+HeartBtInt=30
+CheckLatency=N
+SocketConnectPort=9876
+SocketConnectHost=127.0.0.1
